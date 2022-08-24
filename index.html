@@ -14,25 +14,57 @@
     <title>JS TICKET TRAIN FORM</title>
 </head>
 <body>
-    <div class="container-lg d-flex justify-content-center">
+    <!--TICKET CALCULATION-->
+
+    <div class="container-lg bg-danger bg-gradient py-4">
+    <div class="container-lg d-flex justify-content-center py-4 text-dark bg-light rounded-3">
         <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
     </div>
 
-    <div class="container-lg d-flex justify-content-center">
+    <div class="container-lg d-flex justify-content-center py-4 bg-light rounded-3">
         <div class="row">
-            <div class="col-4">Nome e Cognome</div>
-            <div id="km" class="col-4">Km da percorrere</div>
-            <div id="età" class="col-4">Fascia d'Età</div>
-            <div class="row d-flex justify-content-center">
-                <div class="col-6">
-                    <button>Genera</button>
-                    <button>Annulla</button>
+            <div class="col-4">
+                Nome e Cognome
+                <input type="text" id="name">
+            </div>
+            <div class="col-4">
+                Km da percorrere
+                <input type="number" id="km">
+            </div>
+            <div class="col-4">
+                Fascia d'Età
+                <input type="number" id="età">
+            </div>
+            <div class="row d-flex justify-content-center py-4">
+                <div class="col-4">
+                    <button id="ticket" class="px-2 mx-3 bg-danger rounded-3">Genera</button>
+                    <button class="bg-danger rounded-3">Annulla</button>
                 </div>
             </div>   
         </div>
     </div>
 
-    <div id="js"></div>
+    <!--TICKET PRICE-->
+
+    <div class="container-lg d-flex justify-content-center py-4 text-dark bg-light rounded-3 mt-4">
+        <h1>IL TUO BIGLIETTO</h1>
+    </div>
+
+    <div class="container-lg py-4 bg-light rounded-3">
+        <div class="row py-4">
+            <div class="col-6">
+                Nome Passeggero
+            </div>
+            <div class="col-6">
+                Prezzo Biglietto
+            </div>
+        </div>
+        <div class="row py-4 text-dark">
+            <div class="col-6" id="passenger"></div>
+            <div class="col-6" id="costo"></div>
+        </div>
+    </div>
+    </div>
     
 </body>
 </html>
