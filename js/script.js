@@ -26,6 +26,15 @@ console.log(costo);
 document.getElementById('js').innerHTML= costo;
 */
 
+const età = document.getElementById('età');
+const km = document.getElementById('km');
+const costo = document.getElementById('costo');
+
+costo.addEventListener('click')
+
+
+
+
 
 
 
