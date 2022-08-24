@@ -1,3 +1,4 @@
+/*
 console.log('JS OK')
 
 const età = prompt('Età passeggero?');
@@ -22,6 +23,20 @@ else if (etàNumber> 65)
 }
 
 console.log(costo);
-
 document.getElementById('js').innerHTML= costo;
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
